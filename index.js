@@ -67,6 +67,8 @@ app.post("/users", async (req, res) => {
   }
 });
 
+const HOST = process.env.HOST || "0.0.0.0";
+
 // Start the server only after the DB is initialized.
 initDb()
   .then(() => {
