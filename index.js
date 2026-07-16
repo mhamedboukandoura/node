@@ -73,7 +73,7 @@ const HOST = process.env.HOST || "0.0.0.0";
 initDb()
   .then(() => {
     app.listen(PORT, () => {
-      console.log(`Server listening on http://localhost:${PORT}`);
+      console.log(`Server listening on http://${HOST}:${PORT}`);
     });
   })
   .catch((err) => {
